@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pang Partaj</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="parent">
+    <div id="highscoreElement">
+      <!--Where highscores are displayed-->
+    </div>
+    <div class="div1">
+      <h1>PANG PARTAJ</h1>
+      <form id="form">
+      <p id="usernameParagraph">Username: </p><input id="username" autocomplete="off">
+      <p id="roomCodeParagraph">Room Code: </p><input id="roomCode" autocomplete="off">
+      <br>
+      <button>Send</button>
+    </form>
+    </div>
+    <div class="div2">
+      <button id="mashButton" type="button" onclick="buttonPressed()"><canvas id="myCanvas" width="800" height="500"></canvas>
+      </button>
+    </div>
+    <div class="div3">
+      <p id="scoreText">Your Score:</p>
+      <p id="score">0</p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
